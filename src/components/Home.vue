@@ -92,10 +92,6 @@ export default {
             cardId:0,
         }
     },
-    updated() {
-      this.restaurants[this.targetId].list[this.subract];
-      this.restaurants[this.targetId].list[this.Addition];
-    },
     computed:{
         restaurants(){
             return this.$store.state.restaurants;
@@ -115,10 +111,14 @@ export default {
       minus(event){
         this.subract=event.currentTarget.id;
         this.restaurants[this.targetId].list[this.subract]--;
+        this.restaurants[this.targetId].list.push(0);
+        this.restaurants[this.targetId].list.pop();
       },
       addition(event){
         this.Addition=event.currentTarget.id;
         this.restaurants[this.targetId].list[this.Addition]++;
+        this.restaurants[this.targetId].list.push(0);
+        this.restaurants[this.targetId].list.pop();
       },
       addInToCart(event){
         console.log("Hi this is cart");
