@@ -9,6 +9,7 @@
     max-width="800" min-height="100"
   >
   <h1>one two</h1>
+  <h2>Two </h2>
     <template slot="progress">
       <v-progress-linear
         height="10"
