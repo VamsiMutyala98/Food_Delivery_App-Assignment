@@ -8,13 +8,14 @@
     class="mx-auto my-12"
     max-width="800" min-height="100"
   >
+  <h1>one two</h1>
     <template slot="progress">
       <v-progress-linear
         height="10"
         indeterminate
       ></v-progress-linear>
     </template>
-
+    <h1>kjdfhldk</h1>
     <v-card-title><h1>Total Bill</h1></v-card-title>
     
     <v-card-text>
